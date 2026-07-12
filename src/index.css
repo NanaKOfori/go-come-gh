@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&family=DM+Mono:wght@500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+body { font-family: 'DM Sans', sans-serif; background: #F0F2F5; }
+.font-display { font-family: 'DM Sans', sans-serif; }
+.font-body { font-family: 'DM Sans', sans-serif; }
+.font-mono { font-family: 'DM Mono', monospace; }
+.gcg-mono { font-family: 'DM Mono', monospace; }
+.gcg-spin { animation: gcgspin 0.8s linear infinite; }
+@keyframes gcgspin { to { transform: rotate(360deg); } }
+.gcg-btn { cursor: pointer; border: none; font-family: 'DM Sans', sans-serif; transition: opacity 0.12s, transform 0.1s; }
+.gcg-btn:hover:not(:disabled) { opacity: 0.88; }
+.gcg-btn:active:not(:disabled) { transform: scale(0.98); }
+.gcg-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.gcg-input { font-family: 'DM Sans', sans-serif; outline: none; border: none; background: #FFFFFF; width: 100%; }
+.gcg-input::placeholder { color: #B0B7C3; }
+.gcg-seat:not(:disabled):hover { background: #e8fff9 !important; border-color: #06D6A0 !important; }
+select { font-family: 'DM Sans', sans-serif; }
+input[type="date"]::-webkit-calendar-picker-indicator { opacity: 0.5; cursor: pointer; }
+input[type="time"]::-webkit-calendar-picker-indicator { opacity: 0.5; cursor: pointer; }
